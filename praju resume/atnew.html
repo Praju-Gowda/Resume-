@@ -1,0 +1,174 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./cards.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons"
+      rel="stylesheet">
+    <title>Cards</title>
+
+</head>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.card{
+    width: 350px;
+    margin: 5%;
+    /*background: linear-gradient(45deg, #FF9800, #FFEB3B);
+    */border-radius: 2em;
+    border-top-right-radius: 10em;
+    box-shadow: 0px 0px 15px #c5c5c5;
+    -webkit-border-radius: 2em;
+    -moz-border-radius: 2em;
+    -ms-border-radius: 2em;
+    -o-border-radius: 2em;
+}
+
+.card-image{
+    width: 100%;
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
+}
+
+.card-info-container{
+    padding: 2em 1em 2em;
+}
+
+.card-info-heading{
+    font-size: 1.5em;
+    color: #181818;
+}
+
+.card-info-para{
+    color: #666666;
+    font-size: 0.9em;
+    text-align: justify;
+    font-weight: lighter;
+}
+
+.btn{
+    background-color: #FFEB3B;
+    outline: none;
+    border: none;
+    width: 100%;
+    color: #6e6301;
+    height: 60px;
+    border-radius: 3em;
+    -webkit-border-radius: 3em;
+    -moz-border-radius: 3em;
+    -ms-border-radius: 3em;
+    -o-border-radius: 3em;
+    padding: 1em 2em;
+    font-size: .7em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    cursor: pointer;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+
+.btn:hover{
+    background-color: black;
+    color: white;
+}
+
+.dish-type{
+    color: green;
+    position: relative;
+    top: 5px;
+}
+
+.card-stats-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.stats-heading{
+    font-size: 1em;
+    color: #8e8e8e;
+    margin-bottom: .7em;
+}
+
+.stats-para{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+</style>
+<body>
+   
+  
+
+
+    <div class="card">
+        <div class="card-image-container">
+            <img src="./pic.jpg" alt="" class="card-image">
+        </div>
+
+        <div class="card-info-container">
+            <h1 class="card-info-heading">Chinese Pan-Fried Dumplings <span class="material-icons dish-type">
+                adjust
+                </span></h1>
+            <br/>
+            <p class="card-info-para">
+                Delicious crispy pan-fried dumplings are a satisfying favorite. Often they are filled with pork, cabbage, shiitake mushrooms, and garlic chives, dumplings can take on any filling by replacing some ingredients for others, or skipping some altogether.
+            </p>
+            <br/>
+
+            <div class="card-stats-container">
+                <div class="card-stats">
+                    <h1 class="stats-heading">
+                        Calories
+                    </h1>
+                    <p class="stats-para">
+                        289
+                    </p>
+                </div>
+                <div class="card-stats">
+                    <h1 class="stats-heading">
+                        Fats
+                    </h1>
+                    <p class="stats-para">
+                        21g
+                    </p>
+                </div>
+                <div class="card-stats">
+                    <h1 class="stats-heading">
+                        Carbs
+                    </h1>
+                    <p class="stats-para">
+                        2g
+                    </p>
+                </div>
+
+                <div class="card-stats">
+                    <h1 class="stats-heading">
+                        Protien
+                    </h1>
+                    <p class="stats-para">
+                        28g
+                    </p>
+                </div>
+
+               
+            </div>
+            <br/>
+            <button class="btn"><span class="material-icons">
+                add_shopping_cart
+                </span></button>
+        </div>
+
+    </div>
+
+</body>
+</html>
